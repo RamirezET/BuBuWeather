@@ -1,0 +1,6 @@
+/**index.wxss**/
+
+page {
+  height: 100%;
+  background-image: linear-gradient(to bottom, #3f3b5d, #48606f);
+}

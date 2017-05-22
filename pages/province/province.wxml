@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<!--<view class="headerText">
+    <text>省份列表</text>
+</view>-->
+<view class="container">
+  <view class="nowLocation">
+    <image style="width: 18pt; height: 18pt;" mode='aspectFit' src="../../imgs/location.png"></image>
+    <button class="buttonList" bindtap="getLocation">定位当前城市</button>
+  </view>
+  <view class="buttonListView">
+    <view wx:for="{{provinceList}}" wx:key="{{p}}">
+      <button class="buttonList" data-selectid="{{index}}" bindtap="selectProvince">{{item.p}}</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<!--index.wxml-->
+<view class="container">
+<view class="nowLocation">
+  <button class="buttonList" bindtap="selectNowCity"></button>
+  </view>
+<view class="buttonListView">
+  <view wx:for="{{cityList.c}}" wx:key="{{p}}">
+    <button class="buttonList" data-selectid="{{index}}" bindtap="selectCity">{{item.n}}</button>
+  </view>
+  </view>
+</view>

@@ -1,0 +1,42 @@
+/**app.wxss**/
+
+page {
+  /*height: 100%;*/
+  background-image: linear-gradient(to bottom, #3f3b5d, #48606f);
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.headerText {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 10pt;
+}
+
+.buttonListView {
+  padding: 10pt;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttonList {
+  background-color: transparent;
+  color: #fff;
+  margin: 4pt;
+}
+
+.nowLocation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 50pt;
+}

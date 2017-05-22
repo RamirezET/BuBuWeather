@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<!--<view class="headerText">
+    <text>吃翔天气</text>
+  </view>-->
+<view class="weartherBigPic">
+  <view class="weartherBigPicItem">
+    <text>{{selectCity}}  </text>
+    <text class="switchButton" bindtap="selectProvince">  切换 </text>
+  </view>
+  <view class="weartherBigPicItem">
+    <image style="width:100px;height:100px;margin-top:10px;" mode='aspectFit' src="{{weatherSrc}}"></image>
+  </view>
+  <view class="weartherBigPicItemTemp">
+    <text>{{weatherData.data.result.temp_low}}°~{{weatherData.data.result.temp_high}} ℃ {{weatherData.data.result.weather}}</text>
+  </view>
+</view>
+<view>
+  <view class="weatherReport">
+      <view class="weatherInfo">
+        <image style="width: 15px; height: 15px;margin-top:10px;" mode='aspectFit' src="../../imgs/temp.png"></image>
+        <text> {{weatherData.data.result.temp_curr}} ℃</text>
+      </view>
+      <view class="weatherInfo">
+        <image style="width: 15px; height: 15px;margin-top:10px;" mode='aspectFit' src="../../imgs/wind.png"></image>
+        <text> {{weatherData.data.result.wind}}{{weatherData.data.result.winp}}</text>
+      </view>
+      <view class="weatherInfo">
+        <image style="width: 15px; height: 15px;margin-top:10px;" mode='aspectFit' src="../../imgs/leaf.png"></image>
+        <text> {{aqiInfo.data.result.aqi}} {{aqiInfo.data.result.aqi_levnm}}</text>
+      </view>
+    </view>
+  </view>
+
+<view class="weatherForcast">
+  <view class="weatherDay" wx:for="{{nowAPIweatherData.data.result}}" wx:key="{{date}}">
+    <view class="itemStyle">{{item.days}}</view>
+    <view class="itemMiddleStyle"><image class="futureImg" src="{{item.weather_icon}}"></image> {{item.weather}}</view>
+    <view class="itemStyle">{{item.temp_low}} / {{item.temp_high}}  ℃</view>
+  </view>
+</view>

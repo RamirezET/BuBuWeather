@@ -1,0 +1,75 @@
+/**index.wxss**/
+
+.weatherReport {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: white;
+  font-size: 14px;
+}
+
+.weatherForcast {
+  margin-top: 30px;
+}
+
+.weartherBigPic {
+  margin-top: 30pt;
+  /*text-align: center;*/
+  color: white;
+}
+
+.weartherBigPicItem {
+  display: flex;
+  justify-content: center;
+  margin-top: 10pt;
+  align-items: center;
+}
+
+.weartherBigPicItemTemp {
+  display: flex;
+  justify-content: center;
+  margin-top: 10pt;
+  font-size: 12pt;
+}
+
+weartherPicStyle {
+  width: 15px;
+  height: 15px;
+}
+
+.weatherDay {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.itemStyle {
+  flex: 1;
+  text-align: center;
+  font-size: 12pt;
+  color: #fff;
+}
+
+.itemMiddleStyle {
+  padding-left: 45px;
+  flex: 1;
+  text-align: left;
+  font-size: 12pt;
+  color: #fff;
+}
+
+.switchButton {
+  color: mediumvioletred;
+  font-size: 10pt;
+}
+
+.futureImg {
+  width: 15px;
+  height: 15px;
+}
